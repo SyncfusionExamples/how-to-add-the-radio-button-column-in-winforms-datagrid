@@ -1,9 +1,8 @@
-# How to add the RadioButton column in WinForms DataGrid (SfDataGrid)?
+# How to Add the RadioButton Column in WinForms DataGrid?
 
-## About the sample
-This example illustrates how to add the radio button column in winforms datagrid
+This example illustrates how to add the radio button column in [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid).
 
-By default, SfDataGrid doesn’t have a build in RadioButtonColumn, but we can create the GridRadioButtonColumn by customizing the GridColumn, RadioButtonAdv and GridCellRendererBase in SfDataGrid.
+By default, DataGrid doesn't have a build in RadioButtonColumn, but we can create the GridRadioButtonColumn by customizing the [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumn.html), [RadioButtonAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadioButtonAdv.html) and [GridCellRendererBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridCellRendererBase.html) in SfDataGrid.
 
 ```C#
 [ToolboxItem(false)]
@@ -198,5 +197,4 @@ public class GridRadioButtonColumn : GridColumn
 this.sfDataGrid1.Columns.Add(new GridRadioButtonColumn() { MappingName = "RadioOptions", ItemCount = 3, Width = 140 });
 ```
 
-## Requirements to run the demo
-Visual Studio 2015 and above versions
+![DataGrid with custom RadioButton column](DataGridWithRadioButtonColumn.png)
